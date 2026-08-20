@@ -1,4 +1,4 @@
-<<!<!DOCTYPE html>
+<<!<!<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -98,7 +98,58 @@
       color: #555;
     }
 
-    /* Seção Interativa */
+    /* Seção de Produtos Favoritos */
+    .products-section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 3.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .products-section h2 {
+      color: #c71585;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .product-card {
+      background: #fff0f5;
+      border-radius: 10px;
+      padding: 1.2rem;
+      border: 1px solid #ffb6c1;
+      text-align: center;
+    }
+
+    .product-card h4 {
+      color: #c71585;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card .tag {
+      display: inline-block;
+      background: #ff69b4;
+      color: white;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      margin-bottom: 0.8rem;
+      font-weight: bold;
+    }
+
+    .product-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Seção Interativa da Comunidade */
     .community-section {
       background: white;
       border-radius: 12px;
@@ -189,6 +240,7 @@
     <a href="#corpo">Corpo & Saúde</a>
     <a href="#sono">Sono & Ritual</a>
     <a href="#organizacao">Organização</a>
+    <a href="#produtos">Produtos Recomendados</a>
     <a href="#comunidade">Compartilhar Dica</a>
   </nav>
 
@@ -316,6 +368,52 @@
         </div>
       </div>
 
+    </div>
+
+    <!-- Seção de Produtos Indispensáveis -->
+    <div class="products-section" id="produtos">
+      <h2>🛍️ Cantinho de Produtos Indispensáveis 🛍️</h2>
+      <p style="text-align: center; color: #666;">Os queridinhos que não podem faltar no seu ritual de cuidados!</p>
+
+      <div class="products-grid">
+        
+        <div class="product-card">
+          <span class="tag">Skincare</span>
+          <h4>Protetor Solar Facial com Cor</h4>
+          <p>Protege contra os raios solares e uniformiza o tom da pele de forma leve para o dia a dia.</p>
+        </div>
+
+        <div class="product-card">
+          <span class="tag">Skincare</span>
+          <h4>Sérum de Vitamina C</h4>
+          <p>Ilumina a pele, combate os radicais livres e dá aquele brilho natural radiante.</p>
+        </div>
+
+        <div class="product-card">
+          <span class="tag">Cabelos</span>
+          <h4>Óleo Reparador de Argan</h4>
+          <p>Perfeito para selar as pontas ressecadas, dar brilho instantâneo e controlar o frizz.</p>
+        </div>
+
+        <div class="product-card">
+          <span class="tag">Cabelos</span>
+          <h4>Fronha & Touca de Cetim</h4>
+          <p>Preserva a hidratação dos fios durante a noite e previne a quebra por atrito.</p>
+        </div>
+
+        <div class="product-card">
+          <span class="tag">Corpo & Banho</span>
+          <h4>Esfoliante Corporal de Açúcar</h4>
+          <p>Remove células mortas e deixa a pele aveludada e macia logo no banho.</p>
+        </div>
+
+        <div class="product-card">
+          <span class="tag">Bem-Estar</span>
+          <h4>Aromaterapia / Spray de Lavanda</h4>
+          <p>Borrife no travesseiro antes de deitar para acalmar os pensamentos e melhorar o sono.</p>
+        </div>
+
+      </div>
     </div>
 
     <!-- Seção da Comunidade -->
