@@ -1,9 +1,9 @@
-<<!DOCTYPE html>
+<<!<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glow Up | Seu Espaço de Autocuidado</title>
+  <title>Glow Up | Guia Completo de Autocuidado Feminino</title>
   <style>
     * {
       box-sizing: border-box;
@@ -22,11 +22,11 @@
       background: linear-gradient(135deg, #ffb6c1, #ff69b4);
       color: white;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 3.5rem 1rem;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 0.5rem;
     }
 
@@ -57,72 +57,68 @@
 
     .container {
       max-width: 1100px;
-      margin: 2rem auto;
+      margin: 2.5rem auto;
       padding: 0 1rem;
-    }
-
-    .section-title {
-      text-align: center;
-      color: #c71585;
-      margin: 2rem 0 1rem 0;
     }
 
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.8rem;
     }
 
     .card {
       background: white;
       border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      border-top: 4px solid #ff69b4;
+      padding: 1.8rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-top: 5px solid #ff69b4;
     }
 
     .card h3 {
       color: #c71585;
-      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ffe4e1;
+      padding-bottom: 0.5rem;
     }
 
-    .card ul {
-      list-style-type: none;
+    .topic-block {
+      margin-bottom: 1rem;
     }
 
-    .card li {
-      margin-bottom: 0.5rem;
-      padding-left: 1.2rem;
-      position: relative;
+    .topic-block h4 {
+      color: #db7093;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
     }
 
-    .card li::before {
-      content: "✨";
-      position: absolute;
-      left: 0;
+    .topic-block p {
+      font-size: 0.92rem;
+      color: #555;
     }
 
-    /* Seção Interativa de Dicas */
+    /* Seção Interativa */
     .community-section {
       background: white;
       border-radius: 12px;
       padding: 2rem;
-      margin-top: 3rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      margin-top: 3.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
     .community-section h2 {
       color: #c71585;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       text-align: center;
     }
 
     .form-group {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
       max-width: 600px;
-      margin: 0 auto 2rem auto;
+      margin: 1.5rem auto 2rem auto;
     }
 
     .form-group input, .form-group textarea {
@@ -130,17 +126,18 @@
       border: 1px solid #ffb6c1;
       border-radius: 8px;
       outline: none;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     .form-group button {
       background-color: #ff69b4;
       color: white;
       border: none;
-      padding: 0.8rem;
+      padding: 0.9rem;
       border-radius: 8px;
       font-weight: bold;
       cursor: pointer;
+      font-size: 1rem;
       transition: background 0.3s;
     }
 
@@ -158,13 +155,15 @@
 
     .tip-item {
       background-color: #fff0f5;
-      padding: 1rem;
+      padding: 1.2rem;
       border-radius: 8px;
       border-left: 4px solid #ff69b4;
     }
 
     .tip-item strong {
       color: #c71585;
+      display: block;
+      margin-bottom: 0.3rem;
     }
 
     footer {
@@ -172,7 +171,7 @@
       padding: 2rem;
       background-color: #ffe4e1;
       color: #db7093;
-      margin-top: 3rem;
+      margin-top: 3.5rem;
     }
   </style>
 </head>
@@ -180,16 +179,16 @@
 
   <header>
     <h1>✨ Cantinho do Autocuidado ✨</h1>
-    <p>Seu espaço diário para cultivar amor-próprio, bem-estar e brilho próprio.</p>
+    <p>Seu guia diário de bem-estar, amor-próprio e dicas práticas para a rotina.</p>
   </header>
 
   <nav>
     <a href="#skincare">Pele & Rosto</a>
     <a href="#cabelos">Cabelos</a>
     <a href="#mente">Saúde Mental</a>
-    <a href="#corpo">Corpo & Hábitos</a>
-    <a href="#sono">Sono & Descanso</a>
-    <a href="#estilo">Organização</a>
+    <a href="#corpo">Corpo & Saúde</a>
+    <a href="#sono">Sono & Ritual</a>
+    <a href="#organizacao">Organização</a>
     <a href="#comunidade">Compartilhar Dica</a>
   </nav>
 
@@ -197,85 +196,147 @@
     
     <div class="cards-grid">
       
+      <!-- Card 1 -->
       <div class="card" id="skincare">
-        <h3>1. Rosto & Skincare</h3>
-        <ul>
-          <li><strong>Limpeza suave:</strong> Lave o rosto duas vezes ao dia com sabonete próprio.</li>
-          <li><strong>Protetor solar sempre:</strong> Proteja a pele contra raios UV todos os dias.</li>
-          <li><strong>Máscara semanal:</strong> Reserve um dia da semana para uma hidratação profunda.</li>
-          <li><strong>Remova a maquiagem:</strong> Nunca durma de maquiagem para evitar poros obstruídos.</li>
-        </ul>
+        <h3>1. Rotina de Skincare Detalhada</h3>
+        
+        <div class="topic-block">
+          <h4>☀️ Rotina da Manhã</h4>
+          <p>Lave o rosto com sabonete suave (específico para seu tipo de pele). Aplique um hidratante facial leve e finalize com protetor solar FPS 30 ou superior, mesmo em dias nublados.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🌙 Rotina da Noite</h4>
+          <p>Remova toda a maquiagem com água micelar ou óleo de limpeza. Lave novamente o rosto e aplique um hidratante noturno para regenerar a pele enquanto dorme.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🧖‍♀️ Cuidado Semanal Extra</h4>
+          <p>Faça uma esfoliação leve 1x por semana para remover células mortas e aplique uma máscara hidratante para acalmar a pele.</p>
+        </div>
       </div>
 
+      <!-- Card 2 -->
       <div class="card" id="cabelos">
-        <h3>2. Cuidados Capilares</h3>
-        <ul>
-          <li><strong>Cronograma capilar:</strong> Intercale hidratação, nutrição e reconstrução.</li>
-          <li><strong>Proteção térmica:</strong> Use protetor térmico antes de secador ou chapinha.</li>
-          <li><strong>Fronha de cetim:</strong> Ajuda a diminuir o atrito e o frizz durante a noite.</li>
-          <li><strong>Corte regular:</strong> Elimine pontas duplas a cada 3 ou 4 meses.</li>
-        </ul>
+        <h3>2. Cronograma Capilar & Cuidados</h3>
+        
+        <div class="topic-block">
+          <h4>💧 Hidratação (1-2x por semana)</h4>
+          <p>Devolve a água aos fios. Use máscaras com aloe vera, D-pantenol ou extratos de frutas para fios macios e soltos.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🍳 Nutrição (1x por semana)</h4>
+          <p>Repõe os óleos naturais do cabelo. Máscaras com óleo de coco, argan ou manteiga de karité combatem o ressecamento e o frizz.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🛡️ Proteção Térmica & Cetim</h4>
+          <p>Nunca use secador ou chapinha sem protetor térmico. À noite, use uma touca ou fronha de cetim para evitar o atrito e a quebra dos fios.</p>
+        </div>
       </div>
 
+      <!-- Card 3 -->
       <div class="card" id="mente">
-        <h3>3. Mente & Emoções</h3>
-        <ul>
-          <li><strong>Diário de gratidão:</strong> Escreva 3 coisas boas do seu dia.</li>
-          <li><strong>Tempo offline:</strong> Desconecte-se das redes sociais por 1 hora diária.</li>
-          <li><strong>Limites saudáveis:</strong> Aprenda a dizer "não" para preservar sua energia.</li>
-          <li><strong>Afirmações positivas:</strong> Diga algo gentil para si mesma no espelho.</li>
-        </ul>
+        <h3>3. Saúde Mental & Emoções</h3>
+        
+        <div class="topic-block">
+          <h4>✍️ Journaling (Escrita Terapêutica)</h4>
+          <p>Separe 5 minutos do dia para escrever seus sentimentos sem julgamentos. Anote 3 motivos pelos quais você é grata hoje.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>📱 Detox Digital Regular</h4>
+          <p>Evite olhar as redes sociais assim que acordar e estipule um horário limite à noite. Reduz a ansiedade e a comparação.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🛑 Estabelecendo Limites</h4>
+          <p>Aprenda que dizer "não" para os outros muitas vezes é dizer "sim" para você mesma. Respeite seu tempo e sua energia.</p>
+        </div>
       </div>
 
+      <!-- Card 4 -->
       <div class="card" id="corpo">
-        <h3>4. Corpo & Saúde</h3>
-        <ul>
-          <li><strong>Hidratação:</strong> Beba pelo menos 2 litros de água todos os dias.</li>
-          <li><strong>Movimento:</strong> Faça caminhadas, dança ou alongamento por 20 minutos.</li>
-          <li><strong>Hidratação da pele:</strong> Aplique creme corporal logo após o banho.</li>
-          <li><strong>Alimentação colorida:</strong> Inclua frutas e vegetais na sua rotina.</li>
-        </ul>
+        <h3>4. Corpo & Hábitos Saudáveis</h3>
+        
+        <div class="topic-block">
+          <h4>💧 Metas de Hidratação</h4>
+          <p>Calcule cerca de 35ml de água por quilo de peso corporal. Tenha sempre uma garrafinha bonita por perto para facilitar o hábito.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🧘‍♀️ Movimento Sem Pressão</h4>
+          <p>Encontre uma atividade física que te dê prazer: dança, caminhada ao ar livre, yoga ou pilates. O objetivo é liberar endorfina, não se punir.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🧴 Banho de Autocuidado</h4>
+          <p>Uma vez por semana, transforme o banho em um ritual. Use sabonete esfoliante, acenda uma vela aromática e hidrate todo o corpo ao sair.</p>
+        </div>
       </div>
 
+      <!-- Card 5 -->
       <div class="card" id="sono">
-        <h3>5. Sono & Relaxamento</h3>
-        <ul>
-          <li><strong>Rotina noturna:</strong> Beba um chá morno (como camomila) antes de deitar.</li>
-          <li><strong>Ambiente calmo:</strong> Deixe o quarto escuro e fresco para dormir melhor.</li>
-          <li><strong>Sem telas na cama:</strong> Troque o celular por um livro meia hora antes de dormir.</li>
-          <li><strong>Horário fixo:</strong> Tente dormir e acordar nos mesmos horários.</li>
-        </ul>
+        <h3>5. Higiene do Sono & Relaxamento</h3>
+        
+        <div class="topic-block">
+          <h4>🛏️ Preparando o Ambiente</h4>
+          <p>Mantenha o quarto limpo, escuro e em uma temperatura agradável. Use spray de lavanda no travesseiro para induzir o relaxamento.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>📖 Desconectar para Descansar</h4>
+          <p>Troque a tela do celular por um livro ou música calma 45 minutos antes de dormir. A luz azul altera a produção de melatonina.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🍵 Ritual do Chá Morno</h4>
+          <p>Infusões de camomila, erva-cidreira ou mulungu ajudam a desacelerar a mente e sinalizam ao corpo que é hora de dormir.</p>
+        </div>
       </div>
 
-      <div class="card" id="estilo">
-        <h3>6. Organização & Rotina</h3>
-        <ul>
-          <li><strong>Planner semanal:</strong> Anote suas tarefas para não sobrecarregar a mente.</li>
-          <li><strong>Espaço limpo:</strong> Arrume seu quarto para manter um ambiente leve.</li>
-          <li><strong>Momento a sós:</strong> Reserve um tempo da semana apenas para você.</li>
-          <li><strong>Playlist de energia:</strong> Ouça suas músicas favoritas enquanto arruma as coisas.</li>
-        </ul>
+      <!-- Card 6 -->
+      <div class="card" id="organizacao">
+        <h3>6. Organização & Rotina Leve</h3>
+        
+        <div class="topic-block">
+          <h4>📅 Planejamento Semanal</h4>
+          <p>Aos domingos, organize suas metas e compromissos da semana em um planner. Isso evita o estresse de última hora.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🧹 Método dos 10 Minutos</h4>
+          <p>Dedique apenas 10 minutos por dia para arrumar a mesa de estudos ou o quarto. Mantém o espaço agradável sem acumular bagunça.</p>
+        </div>
+
+        <div class="topic-block">
+          <h4>🌷 Tempo de Qualidade A Sós</h4>
+          <p>Reserve um bloco na semana para um "encontro com você mesma": assista a um filme favorito, faça as unhas ou leia sem interrupções.</p>
+        </div>
       </div>
 
     </div>
 
-    <!-- Espaço da Comunidade -->
+    <!-- Seção da Comunidade -->
     <div class="community-section" id="comunidade">
       <h2>🌸 Mural de Dicas das Leitoras 🌸</h2>
-      <p style="text-align: center; margin-bottom: 1.5rem;">Deixe sua dica especial e ajude outras meninas a se cuidarem!</p>
+      <p style="text-align: center; color: #666;">Compartilhe seu truque favorito de autocuidado e ajude a inspirar outras meninas!</p>
 
       <div class="form-group">
         <input type="text" id="userName" placeholder="Seu nome ou apelido">
-        <textarea id="userTip" rows="3" placeholder="Escreva aqui sua dica de autocuidado..."></textarea>
+        <textarea id="userTip" rows="3" placeholder="Escreva aqui sua dica detalhada de autocuidado..."></textarea>
         <button onclick="addTip()">Publicar Dica ✨</button>
       </div>
 
       <div class="tips-list" id="tipsContainer">
         <div class="tip-item">
-          <strong>Ana Clara:</strong> Beber um copo de água morna com limão logo ao acordar me dá super energia!
+          <strong>Mariana S.</strong>
+          Para não esquecer de beber água, coloco alarmes no celular a cada 2 horas com mensagens motivacionais como: "Hora de brilhar e se hidratar!". Funciona super!
         </div>
         <div class="tip-item">
-          <strong>Beatriz:</strong> Sempre coloco música relaxante para tomar banho no domingo à noite. Renova as energias pra semana!
+          <strong>Camila Rocha</strong>
+          Toda noite antes de dormir, passo óleo de cutícula nas unhas e hidratante nas mãos. Minhas unhas mudaram completamente e ficaram super fortes.
         </div>
       </div>
     </div>
@@ -283,7 +344,7 @@
   </div>
 
   <footer>
-    <p>Feito com carinho ❤️ | Lembre-se: cuidar de você é um ato de amor-próprio.</p>
+    <p>Feito com carinho ❤️ | Lembre-se: cuidar de você é um ato diário de amor-próprio.</p>
   </footer>
 
   <script>
@@ -300,15 +361,12 @@
         return;
       }
 
-      // Cria o elemento da nova dica
       const newTip = document.createElement('div');
       newTip.className = 'tip-item';
-      newTip.innerHTML = `<strong>${name}:</strong> ${tip}`;
+      newTip.innerHTML = `<strong>${name}</strong>${tip}`;
 
-      // Adiciona no topo da lista
       tipsContainer.prepend(newTip);
 
-      // Limpa os campos
       nameInput.value = '';
       tipInput.value = '';
     }
