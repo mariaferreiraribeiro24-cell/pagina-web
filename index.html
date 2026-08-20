@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glow Up | Dicas de Autocuidado</title>
+  <title>Glow Up | Seu Espaço de Autocuidado</title>
   <style>
     * {
       box-sizing: border-box;
@@ -19,7 +19,7 @@
     }
 
     header {
-      background: linear-gradient(135deg, #831c64,#bd4782);
+      background: linear-gradient(135deg, #ffb6c1, #ff69b4);
       color: white;
       text-align: center;
       padding: 3rem 1rem;
@@ -33,16 +33,21 @@
     nav {
       background-color: #ffffff;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 15px;
       padding: 1rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
     nav a {
       color: #db7093;
       text-decoration: none;
       font-weight: bold;
+      font-size: 0.95rem;
       transition: color 0.3s;
     }
 
@@ -51,14 +56,20 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
 
+    .section-title {
+      text-align: center;
+      color: #c71585;
+      margin: 2rem 0 1rem 0;
+    }
+
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.5rem;
     }
 
@@ -91,6 +102,71 @@
       left: 0;
     }
 
+    /* Seção Interativa de Dicas */
+    .community-section {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 3rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .community-section h2 {
+      color: #c71585;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .form-group input, .form-group textarea {
+      padding: 0.8rem;
+      border: 1px solid #ffb6c1;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .form-group button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-group button:hover {
+      background-color: #ff1493;
+    }
+
+    .tips-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .tip-item {
+      background-color: #fff0f5;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid #ff69b4;
+    }
+
+    .tip-item strong {
+      color: #c71585;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -104,54 +180,139 @@
 
   <header>
     <h1>✨ Cantinho do Autocuidado ✨</h1>
-    <p>Seu espaço diário para cultivar amor-próprio, bem-estar e equilíbrio.</p>
+    <p>Seu espaço diário para cultivar amor-próprio, bem-estar e brilho próprio.</p>
   </header>
 
   <nav>
     <a href="#skincare">Pele & Rosto</a>
-    <a href="#mente">Mente & Foco</a>
-    <a href="#corpo">Corpo & Saúde</a>
+    <a href="#cabelos">Cabelos</a>
+    <a href="#mente">Saúde Mental</a>
+    <a href="#corpo">Corpo & Hábitos</a>
+    <a href="#sono">Sono & Descanso</a>
+    <a href="#estilo">Organização</a>
+    <a href="#comunidade">Compartilhar Dica</a>
   </nav>
 
   <div class="container">
+    
     <div class="cards-grid">
       
       <div class="card" id="skincare">
-        <h3>Skincare Básico</h3>
+        <h3>1. Rosto & Skincare</h3>
         <ul>
-          <li><strong>Lave o rosto:</strong> Use um sabonete adequado para o seu tipo de pele.</li>
-          <li><strong>Hidratação:</strong> Mesmo peles oleosas precisam de hidratante.</li>
-          <li><strong>Protetor solar:</strong> Use todos os dias, inclusive em dias nublados.</li>
-          <li><strong>Água micelar:</strong> Lembre-se de retirar toda a maquiagem antes de dormir.</li>
+          <li><strong>Limpeza suave:</strong> Lave o rosto duas vezes ao dia com sabonete próprio.</li>
+          <li><strong>Protetor solar sempre:</strong> Proteja a pele contra raios UV todos os dias.</li>
+          <li><strong>Máscara semanal:</strong> Reserve um dia da semana para uma hidratação profunda.</li>
+          <li><strong>Remova a maquiagem:</strong> Nunca durma de maquiagem para evitar poros obstruídos.</li>
+        </ul>
+      </div>
+
+      <div class="card" id="cabelos">
+        <h3>2. Cuidados Capilares</h3>
+        <ul>
+          <li><strong>Cronograma capilar:</strong> Intercale hidratação, nutrição e reconstrução.</li>
+          <li><strong>Proteção térmica:</strong> Use protetor térmico antes de secador ou chapinha.</li>
+          <li><strong>Fronha de cetim:</strong> Ajuda a diminuir o atrito e o frizz durante a noite.</li>
+          <li><strong>Corte regular:</strong> Elimine pontas duplas a cada 3 ou 4 meses.</li>
         </ul>
       </div>
 
       <div class="card" id="mente">
-        <h3>Bem-Estar Mental</h3>
+        <h3>3. Mente & Emoções</h3>
         <ul>
-          <li><strong>Journaling:</strong> Escreva 3 coisas pelas quais é grata hoje.</li>
-          <li><strong>Digital Detox:</strong> Tire 1 hora antes de dormir longe das telas.</li>
-          <li><strong>Diga não:</strong> Respeite seus limites e seu tempo de descanso.</li>
-          <li><strong>Música:</strong> Crie uma playlist com faixas que relaxam sua mente.</li>
+          <li><strong>Diário de gratidão:</strong> Escreva 3 coisas boas do seu dia.</li>
+          <li><strong>Tempo offline:</strong> Desconecte-se das redes sociais por 1 hora diária.</li>
+          <li><strong>Limites saudáveis:</strong> Aprenda a dizer "não" para preservar sua energia.</li>
+          <li><strong>Afirmações positivas:</strong> Diga algo gentil para si mesma no espelho.</li>
         </ul>
       </div>
 
       <div class="card" id="corpo">
-        <h3>Cuidados Corporais</h3>
+        <h3>4. Corpo & Saúde</h3>
         <ul>
-          <li><strong>Hidratação interna:</strong> Beba pelo menos 2 litros de água por dia.</li>
-          <li><strong>Alongamento:</strong> Separe 10 minutos de manhã para esticar o corpo.</li>
-          <li><strong>Sono regulado:</strong> Tente dormir entre 7 e 8 horas por noite.</li>
-          <li><strong>Banho relaxante:</strong> Use óleos ou sabonetes com aromas de lavanda.</li>
+          <li><strong>Hidratação:</strong> Beba pelo menos 2 litros de água todos os dias.</li>
+          <li><strong>Movimento:</strong> Faça caminhadas, dança ou alongamento por 20 minutos.</li>
+          <li><strong>Hidratação da pele:</strong> Aplique creme corporal logo após o banho.</li>
+          <li><strong>Alimentação colorida:</strong> Inclua frutas e vegetais na sua rotina.</li>
+        </ul>
+      </div>
+
+      <div class="card" id="sono">
+        <h3>5. Sono & Relaxamento</h3>
+        <ul>
+          <li><strong>Rotina noturna:</strong> Beba um chá morno (como camomila) antes de deitar.</li>
+          <li><strong>Ambiente calmo:</strong> Deixe o quarto escuro e fresco para dormir melhor.</li>
+          <li><strong>Sem telas na cama:</strong> Troque o celular por um livro meia hora antes de dormir.</li>
+          <li><strong>Horário fixo:</strong> Tente dormir e acordar nos mesmos horários.</li>
+        </ul>
+      </div>
+
+      <div class="card" id="estilo">
+        <h3>6. Organização & Rotina</h3>
+        <ul>
+          <li><strong>Planner semanal:</strong> Anote suas tarefas para não sobrecarregar a mente.</li>
+          <li><strong>Espaço limpo:</strong> Arrume seu quarto para manter um ambiente leve.</li>
+          <li><strong>Momento a sós:</strong> Reserve um tempo da semana apenas para você.</li>
+          <li><strong>Playlist de energia:</strong> Ouça suas músicas favoritas enquanto arruma as coisas.</li>
         </ul>
       </div>
 
     </div>
+
+    <!-- Espaço da Comunidade -->
+    <div class="community-section" id="comunidade">
+      <h2>🌸 Mural de Dicas das Leitoras 🌸</h2>
+      <p style="text-align: center; margin-bottom: 1.5rem;">Deixe sua dica especial e ajude outras meninas a se cuidarem!</p>
+
+      <div class="form-group">
+        <input type="text" id="userName" placeholder="Seu nome ou apelido">
+        <textarea id="userTip" rows="3" placeholder="Escreva aqui sua dica de autocuidado..."></textarea>
+        <button onclick="addTip()">Publicar Dica ✨</button>
+      </div>
+
+      <div class="tips-list" id="tipsContainer">
+        <div class="tip-item">
+          <strong>Ana Clara:</strong> Beber um copo de água morna com limão logo ao acordar me dá super energia!
+        </div>
+        <div class="tip-item">
+          <strong>Beatriz:</strong> Sempre coloco música relaxante para tomar banho no domingo à noite. Renova as energias pra semana!
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <footer>
-    <p>Feito com amor ❤️ | Lembre-se: cuidar de você não é egoísmo, é prioridade.</p>
+    <p>Feito com carinho ❤️ | Lembre-se: cuidar de você é um ato de amor-próprio.</p>
   </footer>
+
+  <script>
+    function addTip() {
+      const nameInput = document.getElementById('userName');
+      const tipInput = document.getElementById('userTip');
+      const tipsContainer = document.getElementById('tipsContainer');
+
+      const name = nameInput.value.trim();
+      const tip = tipInput.value.trim();
+
+      if (name === '' || tip === '') {
+        alert('Por favor, preencha seu nome e a dica antes de enviar!');
+        return;
+      }
+
+      // Cria o elemento da nova dica
+      const newTip = document.createElement('div');
+      newTip.className = 'tip-item';
+      newTip.innerHTML = `<strong>${name}:</strong> ${tip}`;
+
+      // Adiciona no topo da lista
+      tipsContainer.prepend(newTip);
+
+      // Limpa os campos
+      nameInput.value = '';
+      tipInput.value = '';
+    }
+  </script>
 
 </body>
 </html>
